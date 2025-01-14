@@ -1,0 +1,77 @@
+﻿<Window x:Class="FloorMaster.ManagerMainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FloorMaster"
+        TextElement.FontFamily="Segoe UI"
+        mc:Ignorable="d"
+        Title="ManagerMainWindow" Height="450" Width="800">
+    <TabControl>
+
+        <TabItem Header="Партнёры">
+
+            <ScrollViewer>
+                <StackPanel Name="ScrollBarr">
+                </StackPanel>
+            </ScrollViewer>
+
+        </TabItem>
+        <TabItem Header="Добавить партнёра">
+            <ScrollViewer>
+                <StackPanel>
+                    <Label Content="Наименование" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="ParteerNameTB" Margin="40 10 40 10" FontSize="16" MaxLength="50"/>
+
+                    <Label Content="Юридический адрес" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox Name ="LawAddressTB" Margin="40 10 40 10" FontSize="16" MaxLength="150"/>
+
+                    <Label Content="ИНН" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="INNTB" Margin="200 10 200 10" FontSize="16" MaxLength="12"/>
+
+                    <Label Content="Рейтинг" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="RateTB" Margin="280 10" FontSize="16" MaxLength="2"/>
+
+                    <Button x:Name="AddLogoButton" Content="Добавить лого" Margin="280 10" Click="AddLogoButton_Click"/>
+
+                    <Label Content="Тип организации" HorizontalAlignment="Center" FontSize="16"/>
+                    <ComboBox Name="TypeOfOrganizationCB" Margin="300 10" FontSize="16"/>
+
+                    <Label Content="Имя" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="DirectorNameTB" Margin="280 10" FontSize="16" MaxLength="50"/>
+
+                    <Label Content="Фамилия" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="DirectorSurnameTB" Margin="280 10" FontSize="16" MaxLength="50"/>
+
+                    <Label Content="Отчество" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="DirectorPatronymicTB" Margin="280 10" FontSize="16" MaxLength="50"/>
+
+                    <Label Content="Номер телефона" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="DirectorPhoneNumberTB" Margin="280 10" FontSize="16" MaxLength="12"/>
+
+                    <Label Content="Электронная почта" HorizontalAlignment="Center" FontSize="16"/>
+                    <TextBox x:Name="DirectorEmailTB" Margin="280 10" FontSize="16" MaxLength="50"/>
+
+                    <Button x:Name="SaveButton" Content="Сохранить" Click="SaveButton_Click" Margin="280 10" FontSize="16"/>
+
+                </StackPanel>
+            </ScrollViewer>
+
+
+        </TabItem>
+
+        <TabItem Header="История заказов">
+            <DataGrid x:Name="q" AutoGenerateColumns="False">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Партнер" Width="*" Binding="{Binding partneer}"/>
+                    <DataGridTextColumn Header="Дата создания" Width="*" Binding="{Binding date}"/>
+                    <DataGridTextColumn Header="Продукция" Width="*" Binding="{Binding product}"/>
+                    <DataGridTextColumn Header="Количество" Width="*" Binding="{Binding amount}"/>
+                    <DataGridTextColumn Header="Цена" Width="*" Binding="{Binding caost}"/>
+                    <DataGridTextColumn Header="Сумма" Width="*" Binding="{Binding sum}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </TabItem>
+        
+    </TabControl>
+</Window>

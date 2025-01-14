@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d79e593a2f4e43cfb11a8d9fa848d1e3" Name="Diagram1">
+        <EntityTypeShape EntityType="MasterFloorModel.CostChangeHistory" Width="1.5" PointX="10.5" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Deliver" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.DeliverType" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.DeliveryHistory" Width="1.5" PointX="7.5" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Director" Width="1.5" PointX="10.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.HealthStatus" Width="1.5" PointX="10.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Material" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.MaterialInProduct" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.MaterialType" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Order" Width="1.5" PointX="15.25" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.ParteerType" Width="1.5" PointX="10.75" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Partneer" Width="1.5" PointX="13" PointY="14.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Product" Width="1.5" PointX="8.25" PointY="11.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.ProductInOrder" Width="1.5" PointX="17.5" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.ProductType" Width="1.5" PointX="6" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Role" Width="1.5" PointX="10.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.Staff" Width="1.5" PointX="13" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.StorageBase" Width="1.5" PointX="7.5" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="MasterFloorModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="MasterFloorModel.FK_CostChangeHistory_Product1" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Deliver_DeliverType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Material_Deliver" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_DeliveryHistory_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Partneer_Director" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Staff_HealthStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Material_MaterialType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_MaterialInProduct_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_StorageBase_Material" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_MaterialInProduct_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Order_Partneer" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Order_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_ProductInOrder_Order" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Partneer_ParteerType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Product_ProductType" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_ProductInOrder_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="MasterFloorModel.FK_Staff_Role" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
